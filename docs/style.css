@@ -5,9 +5,9 @@ body
     color: rgb(255, 255, 255);
 }
 
-#headeer
+#header
 {
-    position: absolute;
+    position: fixed;
     left: 0;
     right: 0;
 }
