@@ -1,19 +1,24 @@
-h1
-{
-    color: rgb(146, 27, 27);
-}
 
 body
 {
-    background-color: rgb(28, 28, 54);
+    background-color: rgba(67, 67, 67, 1);
+    color: rgb(255, 255, 255);
+}
+
+#headeer
+{
+    position: absolute;
+    left: 0;
+    right: 0;
 }
 
 #test
 {
-    width: 800px;
-    margin:0 auto;
-    background-color: slategrey;
-    text-align: center;
+    /*width: 800px;*/
+    margin: -8px;;
+    background-color: rgb(190, 181, 162);
+    color: rgb(0, 0, 0);
+    /*text-align: center;*/
     align-content: center;
 }
 
@@ -21,4 +26,4 @@ kbd.key {
     border-radius: 3px;
     padding: 1px 2px 0;
     border: 1px solid rgb(0, 0, 0);
-  }
+}
