@@ -183,7 +183,8 @@ kbd.key
     flex: 1;
 }
 
-#topBtn{
+#topBtn
+{
     display: none;
     position: fixed;
     bottom: 20px;
@@ -197,8 +198,6 @@ kbd.key
     border-radius: 50%;
     width: 10%
 }
-
-
 
 footer
 {
