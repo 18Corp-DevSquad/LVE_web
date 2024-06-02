@@ -20,9 +20,6 @@ body
     color: rgb(255, 255, 255);
 }
 
-#header
-{
-    position: fixed;
 .header
 {
     display: flex;
@@ -186,6 +183,23 @@ kbd.key
     flex: 1;
 }
 
+#topBtn{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99; 
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+    width: 10%
+}
+
+
+
 footer
 {
     background-color: #333;
@@ -195,3 +209,5 @@ footer
     font-family: Arial, sans-serif;
     font-size: 14px;
 }
+
+
