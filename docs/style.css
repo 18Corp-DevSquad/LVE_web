@@ -28,10 +28,12 @@ body
     left: 0;
     right: 0;
     background-color: #333;
+    box-shadow: 0 4px 0 0 rgba(0, 0, 0, .25);
     padding: 10px 0;
     /*text-align: center;*/
     color: white;
     justify-content: space-between;
+    z-index: 1000;
 }
 
 .header img
@@ -94,7 +96,7 @@ body
     .nav-links {
         position: fixed;
     	top: 90px;
-    	left: -180px;
+    	left: -200px;
         right: -270;
 		bottom: 0;
         display: block;
@@ -134,7 +136,7 @@ body
 /* Styles pour afficher le menu lorsqu'il est actif */
 .nav-links.active
 {
-    transform: translateX(180px);
+    transform: translateX(200px);
 }
 /*/nav*/
 
@@ -197,15 +199,40 @@ kbd.key
     background-color: #333;
     cursor: pointer;
     padding: 0px;
-    height: 49px;
-    width: 49px;
+    height: 40px;
+    width: 40px;
     border: 1px solid #252525;
     transition: transform .25s ease-in-out;
     transition-behavior: normal;
     transition-duration: 0.25s;
     transition-timing-function: ease-in-out;
+    backdrop-filter: blur(10px);
     transition-delay: 0s;
     transition-property: transform;
+}
+
+.parallax-container {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+  }
+
+#parallax {
+    /* The image used */
+    width: 100%;
+    height: 700px;
+  
+    /* Set a specific height */
+    min-height: 500px;
+    background-image: url("images/top.png");
+  
+    /* Create the parallax scrolling effect */
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    transform: translateY(0px);
 }
 
 footer
