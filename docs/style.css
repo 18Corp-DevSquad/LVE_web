@@ -12,12 +12,12 @@ html, body {
 body
 {
     font-family: Arial, sans-serif;
+    color: rgb(255, 255, 255);
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
     background-color: rgba(67, 67, 67, 1);
-    color: rgb(255, 255, 255);
 }
 
 .header
@@ -107,13 +107,13 @@ body
     	transition-timing-function: ease-in-out;
     	transition-delay: 0s;
     	transition-property: transform;
-        background-color: rgb(26, 26, 26);
+        background-color: #2e2e2e;
     }
 
     .nav-links li {
         display: flex;
 		padding: 20px;
-		border-bottom: 1px solid #131313;
+		border-bottom: 1px solid #252525;
     }
 
     .menu-icon {
@@ -185,18 +185,27 @@ kbd.key
 
 #topBtn
 {
-    display: none;
+    display: block;
+    font-family: Arial, sans-serif;
+    color: rgb(255, 255, 255);
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 0;
+    right: -200px;
     z-index: 99; 
     border: none;
     outline: none;
-    color: white;
+    background-color: #333;
     cursor: pointer;
-    padding: 15px;
-    border-radius: 50%;
-    width: 10%
+    padding: 0px;
+    height: 49px;
+    width: 49px;
+    border: 1px solid #252525;
+    transition: transform .25s ease-in-out;
+    transition-behavior: normal;
+    transition-duration: 0.25s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+    transition-property: transform;
 }
 
 footer
