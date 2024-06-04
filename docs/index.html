@@ -20,11 +20,24 @@
 					&#9776;
 				</div>
 				<ul class="nav-links">
-					<li><a href="#page"><b>Accueil</b></a></li>
-					<li><a href="Encyclopedie.html">Encyclopedie</a></li>
-					<li><a href="Actualite.html">Actualité</a></li>
+					<li>
+						<a href="#page"><b>Accueil</b></a>
+					</li>
+					<li>
+						<a href="encyclopedie.html">Encyclopedie</a>
+					</li>
+					<li>
+						<a href="actualite.html">Actualité</a>
+					</li>
+					<li>
+						<div class="search-bar">
+							<input type="text" id="search-input" placeholder="Rechercher..." oninput="searchPages()">
+						</div>
+						<div class="results" id="results"></div>
+					</li>
 				</ul>
 			</nav>
+			
 			<script src="nav.js"></script>
 		</div>
 		</header>

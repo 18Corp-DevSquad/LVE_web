@@ -245,4 +245,28 @@ footer
     font-size: 14px;
 }
 
+.search-bar {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.results {
+    max-width: 600px;
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    display: none;
+}
+
+.result-item {
+    margin-bottom: 10px;
+}
+
+.result-item a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
 
