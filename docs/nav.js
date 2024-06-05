@@ -10,13 +10,9 @@ function scroll()
 {
     let topBtn = document.getElementById("topBtn");
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20)
-	{
     	topBtn.style.transform = "translateX(-200px)";
-    }
 	else
-	{
     	topBtn.style.transform = "translateX(0px)";
-    }
     const footer = document.querySelector('footer');
     const footerRect = footer.getBoundingClientRect();
     const windowHeight = window.innerHeight;
@@ -26,9 +22,7 @@ function scroll()
     	topBtn.style.bottom = `${distanceToBottom}px`;
     }
 	else
-	{
     	topBtn.style.bottom = '0px';
-    }
 }
 
 
@@ -46,9 +40,9 @@ window.addEventListener('scroll', function()
 
 
 const page_index_list = [
-	{ title: "Actualité", url: "/LVE_web/actualite.html", content:"Actualités du site et du serveur, retrouvez toutes les informations nécéssaire sur les actualités d'LVE"},
-	{ title: "Menu principal", url: "/LVE_web/", content: "Page principale du site"},
-	{ title: "Encyclopédie", url: "/LVE_web/encyclopedie.html", content: "Apprenez en plus sur l'univers d'LVE"}
+	{ title: "Actualités", url: "/docs/actualite.html", content:"Actualités du site et du serveur, retrouvez toutes les informations nécéssaire sur les actualités d'LVE"},
+	//{ title: "Menu principal", url: "/docs/index.html", content: "Page principale du site"},
+	{ title: "Encyclopédie", url: "/docs/encyclopedie.html", content: "Apprenez en plus sur l'univers d'LVE"}
 ]
 
 function searchPages() {
