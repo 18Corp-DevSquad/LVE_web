@@ -1,79 +1,50 @@
 <!DOCTYPE html>
-
 <html lang="fr">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>LVE</title>
-		<link rel="icon" type="image/png" href="images/logo.png">
-		<link rel="stylesheet" href="style.css">
-	</head>
-	<body>
-		<header>
-	    <div class="header">
-			<div class="nav-sit-header">
-				<img src="images/logo.png" alt="LVE Logo">
-				<h1>LVE</h1>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>LVE</title>
+        <link rel="icon" type="image/png" href="images/logo.png">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+        <div class="header">
+            <div class="nav-sit-header">
+                <img src="images/logo.png" alt="LVE Logo">
+                <h1>LVE</h1>
+            </div>
+            <nav class="navbar">
+                <div class="menu-icon" onclick="toggleMenu()">
+                    &#9776;
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#"><b>Accueil</b></a></li>
+                    <li><a href="encyclopedie.html">Encyclopédie</a></li>
+                    <li><a href="actualite.html">Actualités</a></li>
+                    <li>
+                        <div class="search-bar">
+                            <input type="text" id="search-input" placeholder="Rechercher..." oninput="searchPages()">
+                        </div>
+                        <div class="results" id="results"></div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        </header>
+        <button onclick="ScrollTopFunction()" id="topBtn" title="Aller en haut"><h1><b>&#8593</b></h1></button>
+        <div class="main-content">
+            <div class="parallax-container">
+                <div id="parallax"></div>
+            </div>
+			<br>
+			<div class="content">
 			</div>
-			<nav class="navbar">
-				<div class="menu-icon" onclick="toggleMenu()">
-					&#9776;
-				</div>
-				<ul class="nav-links">
-					<li>
-						<a href="#page"><b>Accueil</b></a>
-					</li>
-					<li>
-						<a href="encyclopedie.html">Encyclopedie</a>
-					</li>
-					<li>
-						<a href="actualite.html">Actualité</a>
-					</li>
-					<li>
-						<div class="search-bar">
-							<input type="text" id="search-input" placeholder="Rechercher..." oninput="searchPages()">
-						</div>
-						<div class="results" id="results"></div>
-					</li>
-				</ul>
-			</nav>
-			
-			<script src="nav.js"></script>
-		</div>
-		</header>
-		<button onclick="ScrollTopFunction()" id="topBtn" title="Aller en haut"><h1><b>&#8593</b></h1></button>
-		<div class="main-content">
-			<div class="parallax-container">
-			<div id="parallax"></div>
-			</div>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			test;
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			test;
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			test;
-		</div>
+        </div>
 		<footer>
-			<p>NON APPROUVÉ PAR OU ASSOCIÉ À MOJANG OU MICROSOFT</p>
-			<p>LVE 2018-2024</p>
+			<p>NON AFFILIÉ NI APPROUVÉ PAR MOJANG OU MICROSOFT</p>
+			<p>&copy; 2018-2024  LVE - Tous les droits sont réservés.</p>
 		</footer>
-	</body>
-<html>
+        <script src="nav.js"></script> 
+    </body>
+</html>
